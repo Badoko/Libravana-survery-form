@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        
+        <header class="header-container">
+            
+            <h1 id="title" >Survey Form</h1> 
+            <p class="header-p" id="description" >Thank you for taking time to help us improve our platform</p>
+        </header>
+    
+    <form method="post" action="" id="survey-form">
+        <fieldset class="personal-info">
+            <label for="" id="name-label">Name: <input type="text" name="name" id="name" placeholder="Enter your name" id="name" required ></label>
+
+<label id="email-label">Email: <input id="email" type="email" name="email"  placeholder="Enter your Email" required>
+</label>
+
+<label id="number-label">Age: <input type="number" name="number" id="number" placeholder="Age" min="18" max="30"></label>
+
+            <label for="">Which option best describes your roll?: <select id="dropdown">
+                <option value="">Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Intern</option>
+                <option value="3">Civil servant</option>
+                <option value="4">Poltician</option>
+                <option value="5">Social worker</option>
+            </select> </label>
+            <p>Would you recommend Libravana Technologies to a friend?</p>
+            <label for="user-recommendation"><input name="user-recommendation" type="radio" value="Definately" class="input-radio">Definately</label>
+            <label for="user-recommendation"><input name="user-recommendation" type="radio" value="Maybe" class="input-radio">Maybe</label>
+            <label for="user-recommendation"><input name="user-recommendation" type="radio" value="Not-sure" class="input-radio">Not-sure</label>
+            <label for="">What is your favorite Libravana Technologies Servies? <select>
+                <option value="">Select an option</option>
+                <option value="1">Web development</option>
+                <option value="2">Database management</option>
+                <option value="3">Software maintenance</option>
+                <option value="4">Payment Services</option>
+                <option value="5">Computer instalations</option>
+            </select> </label>   
+            <p>What would you like us to improve? (Check all that apply)</p> 
+            <label for="user-recommendation"><input name="user-recommendation" type="checkbox" value="Front-end Projects" class="input-radio">Front-end Projects</label>
+            <label for="user-recommendation"><input name="user-recommendation" type="checkbox" value="Back-end Projects" class="input-radio">Back-end Projects</label>
+            <label for="user-recommendation"><input name="user-recommendation" type="checkbox" value="Data Visualization" class="input-radio">Data Visualization</label>
+            <label for="user-recommendation"><input name="user-recommendation" type="checkbox" value="Challenges" class="input-radio">Challenges</label>
+            <label for="user-recommendation"><input name="user-recommendation" type="checkbox" value="Open Source Community" class="input-radio">Open Source Community</label>
+            <label for="user-recommendation"><input name="user-recommendation" type="checkbox" value="Gitter help rooms" class="input-radio">Gitter help rooms</label>
+            <label for="user-recommendation"><input name="user-recommendation" type="checkbox" value="Videos" class="input-radio">Videos</label>
+            <label for="user-recommendation"><input name="user-recommendation" type="checkbox" value="City Meetups" class="input-radio">City Meetups</label>
+            <label for="user-recommendation"><input name="user-recommendation" type="checkbox" value="Wiki" class="input-radio">Wiki</label>
+            <label for="">Any comments or suggestions? <textarea class="commenttxt" placeholder="Enter your comment here..."></textarea> </label>
+            <button class="submit-click" type="submit" id="submit">Submit</button>
+        </fieldset>
+        
+    </form>
+
+    <footer> &copy 2023 Libravana Technologies Nigeria</footer>
